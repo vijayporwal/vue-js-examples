@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Vue JS Example-1</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>
+            {{ title }}
+        </p>
+    </div>
+    <script>
+        var myModel = {
+            title: 'Hello World!'
+        };
+
+        var myApp = new Vue({
+            el: '#app',
+            data: myModel
+        });
+    </script>
+</body>
+</html>
